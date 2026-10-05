@@ -11963,8 +11963,3 @@ for toolName, info in pairs(Catalog.GetActiveCustomTools()) do
         }
     end
 end
-
-return {
-    Catalog = Catalog,
-    Sandbox = Sandbox
-}
