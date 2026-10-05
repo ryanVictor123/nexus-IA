@@ -6,6 +6,13 @@ local T=game:GetService("TweenService")
 local P=game:GetService("Players").LocalPlayer
 local PG=P:FindFirstChild("PlayerGui") or G
 local RS=game:GetService("ReplicatedStorage")
+
+local NEXUS_TOOLS = _G.NEXUS_TOOLS
+if not NEXUS_TOOLS then
+    warn("[NEXUS CATALOG] NEXUS_TOOLS não está exposto em _G")
+    return
+end
+
 local U="https://catalogplugins.nvlzskidd.workers.dev"
 local PF="nexus_plugins.json"
 local UID=tostring(P.UserId)
