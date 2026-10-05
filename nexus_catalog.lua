@@ -45,8 +45,8 @@ function C.Mine() local ok,d=RQ("GET","/my-plugins?user_id="..UID) if not ok the
 function C.Rt(id,s) return RQ("POST","/plugins/"..id.."/rate",{stars=s}) end
 function C.Au(u) return RQ("GET","/authors/"..u) end
 function C.AdL() return RQ("GET","/admin/all-plugins") end
-function C.AdA(id) return RQ("POST","/admin/approve/"..id,{reason:"a"}) end
-function C.AdR(id) return RQ("POST","/admin/reject/"..id,{reason:"r"}) end
+function C.AdA(id) return RQ("POST","/admin/approve/"..id,{reason="a"}) end
+function C.AdR(id) return RQ("POST","/admin/reject/"..id,{reason="r"}) end
 function C.AdD(id) return RQ("DELETE","/plugins/"..id) end
 
 local SG={Vector3=Vector3,Vector2=Vector2,CFrame=CFrame,Color3=Color3,UDim=UDim,UDim2=UDim2,Enum=Enum,BrickColor=BrickColor,Ray=Ray,math=math,string=string,table=table,tonumber=tonumber,tostring=tostring,type=type,typeof=typeof,ipairs=ipairs,pairs=pairs,next=next,select=select,unpack=unpack or table.unpack,pcall=pcall,xpcall=xpcall,error=error,assert=assert,os={time=os.time,clock=os.clock,date=os.date},task={wait=task.wait,spawn=task.spawn,delay=task.delay,defer=task.defer},coroutine={create=coroutine.create,resume=coroutine.resume,status=coroutine.status,yield=coroutine.yield,wrap=coroutine.wrap,close=coroutine.close}}
